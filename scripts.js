@@ -7,5 +7,7 @@ const cidade = document.getElementById("cidade");
 const estado = document.getElementById("estado");
 
 cep.addEventListener("blur", async () => {
-
+    
+    const cepLimpo = cep.value.replace(/\D/g, "");
+    
 });
