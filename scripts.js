@@ -9,5 +9,10 @@ const estado = document.getElementById("estado");
 cep.addEventListener("blur", async () => {
     
     const cepLimpo = cep.value.replace(/\D/g, "");
-    
+
+    if (cepLimpo.length !== 8) {
+  alert("CEP inválido");
+  return;
+  }
+
 });
