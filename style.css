@@ -29,3 +29,9 @@ form h1 {
     color: #1a1a2e;
     margin-bottom: 0.25rem;
 }
+
+form > p {
+    font-size: 0.85rem;
+    color: #555555;
+    margin-bottom: 1.5rem;
+}
