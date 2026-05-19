@@ -10,38 +10,43 @@
     <form id="formCadastro">
         <h1>Cadastro de usuário</h1>
         <p>Por favor preencha os campos abaixo para realizar o cadastro.</p>
+    
+
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <label for="nome">Nome completo</label>
+            <input type="text" id="nome" name="nome" placeholder="Ex: Pedro da Silva" required>
+
+            <label for="email">email</label>
+            <input type="email" id="email" name="email" placeholder="Ex: seila@gmail.com" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Endereço</legend>
+            <label for="cep">CEP</label>
+            <input type="text" id="cep" name="cep" placeholder="00000-000">
+
+            <button type="button" id="btnBuscarCep">Buscar CEP</button>
+
+            <label for="logradouro">Logradouro</label>
+            <input type="text" id="logradouro" name="logradouro" placeholder="Rua, Avenida ..." required>
+
+            <label for="numero">Número</label>
+            <input type="number" id="numero" name="numero" placeholder="Ex: 123" required>
+
+            <label for="bairro">Bairro</label>
+            <input type="text" id="bairro" name="bairro" placeholder="Seu bairro" required>
+
+            <label for="cidade">Cidade</label>
+            <input type="text" id="cidade" name="cidade" placeholder="Sua cidade" required disabled>
+
+            <label for="estado">Estado (UF)</label>
+            <input type="text" id="estado" name="estado" placeholder="UF" required disabled>
+        </fieldset>
+    
+        <p id="mensagem"></p>
+
+        <button type="submit">Salvar cadastro</button>
     </form>
-
-    <fieldset>
-        <legend>Dados pessoais</legend>
-        <label for="nome">Nome completo</label>
-        <input type="text" id="nome" name="nome" placeholder="Ex: Pedro da Silva" required>
-
-        <label for="email">email</label>
-        <input type="email" id="email" name="email" placeholder="Ex: seila@gmail.com" required>
-    </fieldset>
-
-    <fieldset>
-        <legend>Endereço</legend>
-        <label for="cep">CEP</label>
-        <input type="text" id="cep" name="cep" placeholder="00000-000">
-
-        <button type="button" id="btnBuscarCep">Buscar CEP</button>
-
-        <label for="logradouro">Logradouro</label>
-        <input type="text" id="logradouro" name="logradouro" placeholder="Rua, Avenida ..." required>
-
-        <label for="numero">Número</label>
-        <input type="number" id="numero" name="numero" placeholder="Ex: 123" required>
-
-        <label for="bairro">Bairro</label>
-        <input type="text" id="bairro" name="bairro" placeholder="Seu bairro" required>
-
-        <label for="cidade">Cidade</label>
-        <input type="text" id="cidade" name="cidade" placeholder="Sua cidade" required disabled>
-
-        <label for="estado">Estado (UF)</label>
-        <input type="text" id="estado" name="estado" placeholder="UF" required disabled>
-    </fieldset>
 </body>
 </html>
