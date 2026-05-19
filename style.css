@@ -87,3 +87,24 @@ input[type="number"]::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
+
+button {
+    padding: 0.65rem 1.25rem;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    transition: background-color 0.2s;
+}
+
+button[type="submit"] {
+    width: 100%;
+    background-color: #2563eb;
+    color: #ffffff;
+    margin-top: 1rem;
+}
+
+button[type="submit"]:hover {
+    background-color: #1d4ed8;
+}
