@@ -41,3 +41,10 @@ fieldset {
     padding: 0;
     margin-bottom: 1.5rem;
 }
+
+legend {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    color: #1a1a2e;
+    margin-bottom: 0.25rem;
+}
