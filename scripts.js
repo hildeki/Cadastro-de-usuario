@@ -40,3 +40,57 @@ cep.addEventListener("blur", async () => {
   }
 
 });
+
+function salvarDados() {
+
+  const dadosFormulario = {
+
+    nome: nome.value,
+    email: email.value,
+    cep: cep.value,
+    rua: rua.value,
+    bairro: bairro.value,
+    cidade: cidade.value,
+    estado: estado.value
+
+  };
+
+  localStorage.setItem(
+    "usuario",
+    JSON.stringify(dadosFormulario)
+  );
+
+}
+
+// ==========================
+// CARREGAR DADOS
+// ==========================
+function carregarDados() {
+
+  const dados = localStorage.getItem("usuario");
+
+  if (dados) {
+
+    const usuario = JSON.parse(dados);
+
+    nome.value = usuario.nome || "";
+    email.value = usuario.email || "";
+    cep.value = usuario.cep || "";
+    rua.value = usuario.rua || "";
+    bairro.value = usuario.bairro || "";
+    cidade.value = usuario.cidade || "";
+    estado.value = usuario.estado || "";
+
+  }
+
+}
+
+// ==========================
+// SALVAR AUTOMATICAMENTE
+// ==========================
+document.addEventListener("input", salvarDados);
+
+// ==========================
+// CARREGAR AO ABRIR
+// ==========================
+window.addEventListener("load", carregarDados);
